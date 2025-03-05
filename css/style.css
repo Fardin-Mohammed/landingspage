@@ -1,15 +1,16 @@
-*{
+/* JOUW BESTAANDE CSS - ONGEWIJZIGD */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: sans-serif;
     font-size: 16px;
 }
 
-.header{
+.header {
     background: black;
     display: flex;
     height: 80px;
@@ -19,70 +20,66 @@ body{
     padding-left: 40px;
 }
 
-.headerTitle{
+.headerTitle {
     color: white;
     text-transform: uppercase;
     font-size: 400%;
     font-weight: 400;
 }
 
-
-.headerMenu{
+.headerMenu {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.headerLabel{
+.headerLabel {
     position: absolute;
     color: white;
 }
 
-.headerButton{
+.headerButton {
     appearance: none;
     width: 100px;
     height: 50px;
     z-index: 1000;
 }
 
-
-.mainNavigation{
+.mainNavigation {
     color: white;
     position: absolute;
     top: 8%;
     right: 0;
-    bottom:o;
-    right:0;
     background: black;
     display: none;
     width: 100px;
 }
 
-.mainNavigation > ul{
+.mainNavigation > ul {
     list-style: none;
 }
 
-.headerButton:checked ~ .mainNavigation{
+.headerButton:checked ~ .mainNavigation {
     display: flex;
 }
-.bigFigure{
+
+.bigFigure {
     width: 100%;
     height: 110vh;
 }
 
-.bigFigure > img{
+.bigFigure > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-
-.collections{
+.collections {
     width: 100%;
     padding: 40px;
 }
 
-.collectionsTitle , .infoTitle{
+.collectionsTitle, .infoTitle {
     font-size: 350%;
     color: black;
     text-transform: uppercase;
@@ -90,44 +87,44 @@ body{
     margin-bottom: 40px;
 }
 
-.collectionsList{
+.collectionsList {
     list-style: none;
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
 }
 
-.collectionsListItem{
+.collectionsListItem {
     width: 500px;
     height: 700px;
     flex-shrink: 1;
     flex-grow: 1;
 }
 
-.collectionsListItem > img{
+.collectionsListItem > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.info{
+.info {
     padding: 40px;
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
 }
 
-.block{
+.block {
     width: 400px;
     flex-shrink: 1;
     flex-grow: 1;
 }
 
-.info p{
+.info p {
     max-width: 50ch;
 }
 
-.footer{
+.footer {
     height: 120px;
     background: black;
     display: flex;
@@ -139,26 +136,84 @@ body{
     padding-right: 40px;
 }
 
-.footerNavigation{
+.footerNavigation {
     list-style: none;
 }
 
-.footerNavigationItem{
+.footerNavigationItem {
     font-size: 80%;
     font-style: italic;
 }
 
-.footerNavigationItem > a{
+.footerNavigationItem > a {
     color: white;
     text-decoration: none;
 }
 
-.footer > address{
+.footer > address {
     font-size: 80%;
 }
 
 @media screen and (max-width:700px) {
-    body{
+    body {
         font-size: 14px;
     }
+}
+
+/* NIEUWE CSS VOOR HET FORMULIER */
+html {
+    font-size: 62.5%; /* 62.5% truc: 1rem = 10px */
+}
+
+/* Formulier Sectie */
+.form-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40rem;
+    text-align: center;
+    margin: 4rem auto;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: #b22222; /* Japanse rode kleur */
+}
+
+/* Flexbox Formulier */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+label {
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+input, select, textarea {
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    width: 100%;
+}
+
+/* Call-to-Action Knop */
+.cta-button {
+    font-size: 1.8rem;
+    background-color: #b22222;
+    color: white;
+    border: none;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #8b1a1a;
 }
